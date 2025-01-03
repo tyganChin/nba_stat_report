@@ -1,0 +1,91 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>PlayerStats</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href= "/static/css/view.css">
+
+    </head>
+    <body id="body" style="background-color: #A1A1A1;">
+
+        <img id="background-texture" src="static/images/paper-background.png" alt="background texture" id="background">
+
+        <img id="loading" src="../static/images/loading.gif">
+
+        <div style="background-color: #A1A1A1;" class="top-bar" id="top-bar">
+            <img onclick="goHome()" id="logo" src=https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg>
+            <p style="margin-left: 1%; text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);">Quincy Acy's Report</p>
+            <div class="search-container">
+                <input class="searchBox" id="input" type="text" placeholder="Player" autocomplete="off">
+                <div id="results-container"> </div>
+            </div>
+        </div>
+
+        <div class='container' style="background-color: #424242;" id="main">
+
+            <div class="row1">
+                <div id="playerImage-container">
+                    <img id="playerImage" src="https://cdn.nba.com/headshots/nba/latest/1040x760/203112.png">
+                    <div style="color: #A1A1A1;"id="playerNumber"></div>
+                </div>
+                
+                <div id="playerInfo-container">
+                    <div style="color: #A1A1A1;" id="playerInfo-title">General Info</div>
+                    <div id="playerInfo"><div class='infoRow'> <div class='label'>Position</div> <div class='value'>: Forward</div> </div><div class='infoRow'> <div class='label'>Height</div> <div class='value'>: 6-7</div> </div><div class='infoRow'> <div class='label'>Team</div> <div class='value'>: BKN</div> </div><div class='infoRow'> <div class='label'>Age</div> <div class='value'>: 34</div> </div><div class='infoRow'> <div class='label'>Draft</div> <div class='value'>: 2012 (r2/p37)</div> </div><div class='infoRow'> <div class='label'>School</div> <div class='value'>: Baylor</div> </div><div class='infoRow'> <div class='label'>Yrs Pro</div> <div class='value'>: 7</div> </div></div>
+                </div>
+
+                <div class="averages-container">
+                    <div class="averages-buttons">
+                        <div onclick = "averagesButtonClicked(0)" class="averages-button" id="careeraverages-button" style="color: #A1A1A1; text-decoration: underline;">Career</div>
+                        <div>&nbsp;|&nbsp;</div>
+                        <div onclick = "averagesButtonClicked(1)" class="averages-button" id="playoffaverages-button" style="color: #A1A1A1;">Playoff</div>
+                        <div>&nbsp;|&nbsp;</div>
+                        <div onclick = "averagesButtonClicked(2)" class="averages-button" id="currentaverages-button" style="color: #A1A1A1;">Current</div>
+                    </div>
+                    <div class="average-container" id="careerAverages" style="display: grid;"><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>PPG</p></div> <div class="average-value"> <p>4.9 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>RPG</p></div> <div class="average-value"> <p>3.5 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>APG</p></div> <div class="average-value"> <p>0.6 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>SPG</p></div> <div class="average-value"> <p>0.4 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>BPG</p></div> <div class="average-value"> <p>0.4 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>MPG</p></div> <div class="average-value"> <p>16.0 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>TPG</p></div> <div class="average-value"> <p>0.6 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>FG%</p></div> <div class="average-value"> <p>0.44 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>FT%</p></div> <div class="average-value"> <p>0.76 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>3P%</p></div> <div class="average-value"> <p>0.35 </p> </div> </div></div><div class="average-container" id="playoffAverages" style="display: none;"><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>PPG</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>RPG</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>APG</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>SPG</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>BPG</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>MPG</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>TPG</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>FG%</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>FT%</p></div> <div class="average-value"> <p>N/A </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>3P%</p></div> <div class="average-value"> <p>N/A </p> </div> </div></div><div class="average-container" id="currentAverages" style="display: none;"><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>PPG</p></div> <div class="average-value"> <p>1.7 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>RPG</p></div> <div class="average-value"> <p>2.5 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>APG</p></div> <div class="average-value"> <p>0.8 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>SPG</p></div> <div class="average-value"> <p>0.1 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>BPG</p></div> <div class="average-value"> <p>0.4 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>MPG</p></div> <div class="average-value"> <p>12.3 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>TPG</p></div> <div class="average-value"> <p>0.4 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>FG%</p></div> <div class="average-value"> <p>0.22 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>FT%</p></div> <div class="average-value"> <p>0.7 </p> </div> </div><div class="average" style="border: 1px solid #A1A1A1;"> <div style="border-bottom: 1px solid #A1A1A1;"class="average-title"> <p>3P%</p></div> <div class="average-value"> <p>0.13 </p> </div> </div></div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="graph-container">
+                    <div style="color: #A1A1A1;" class="countingStatButtons"><div>&nbsp;|&nbsp;</div> <div onclick='countingStatButtonClicked(0)' id=careerPPGbutton class='countingStatButton' style='text-decoration: underline'>PTS</div><div>&nbsp;|&nbsp;</div> <div onclick='countingStatButtonClicked(1)' id=careerRPGbutton class='countingStatButton' style='text-decoration: none'>REB</div><div>&nbsp;|&nbsp;</div> <div onclick='countingStatButtonClicked(2)' id=careerAPGbutton class='countingStatButton' style='text-decoration: none'>AST</div><div>&nbsp;|&nbsp;</div> <div onclick='countingStatButtonClicked(3)' id=careerSPGbutton class='countingStatButton' style='text-decoration: none'>STL</div><div>&nbsp;|&nbsp;</div> <div onclick='countingStatButtonClicked(4)' id=careerBPGbutton class='countingStatButton' style='text-decoration: none'>BLK</div><div>&nbsp;|&nbsp;</div> <div onclick='countingStatButtonClicked(5)' id=careerMPGbutton class='countingStatButton' style='text-decoration: none'>MIN</div><div>&nbsp;|&nbsp;</div> <div onclick='countingStatButtonClicked(6)' id=careerTPGbutton class='countingStatButton' style='text-decoration: none'>TOV</div><div>&nbsp;|&nbsp;</div></div>
+                    <img style="display: flex;" id="careerPts" src="{{ url_for('static', filename='images/careerPts_graph.png') }}"><img style="display: none;" id="careerRebs" src="{{ url_for('static', filename='images/careerRebs_graph.png') }}"><img style="display: none;" id="careerAsts" src="{{ url_for('static', filename='images/careerAsts_graph.png') }}"><img style="display: none;" id="careerStls" src="{{ url_for('static', filename='images/careerStls_graph.png') }}"><img style="display: none;" id="careerBlks" src="{{ url_for('static', filename='images/careerBlks_graph.png') }}"><img style="display: none;" id="careerMins" src="{{ url_for('static', filename='images/careerMins_graph.png') }}"><img style="display: none;" id="careerTovs" src="{{ url_for('static', filename='images/careerTovs_graph.png') }}">
+                </div>
+
+                <div class="awards-teams-container">
+                    <div class="awards-container">
+                        <div style="color: #A1A1A1;" class="awards-title">Awards</div>
+                        <div class="awards"></div>
+                    </div>
+
+                    <div class="teams-container">
+                        <div style="color: #A1A1A1;" class="teams-title">Teams</div>
+                        <div class="teams"><div class='team'> <div class='team-img-container'> <img class='team-img' src='https://cdn.nba.com/logos/nba/1610612761/primary/L/logo.svg'> </div> <div class='team-title'>TOR</div> <div class='team-length'>2012
+2014</div></div><div class='team'> <div class='team-img-container'> <img class='team-img' src='https://cdn.nba.com/logos/nba/1610612758/primary/L/logo.svg'> </div> <div class='team-title'>SAC</div> <div class='team-length'>2013
+2014</div></div><div class='team'> <div class='team-img-container'> <img class='team-img' src='https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg'> </div> <div class='team-title'>NYK</div> <div class='team-length'>2014
+2015</div></div><div class='team'> <div class='team-img-container'> <img class='team-img' src='https://cdn.nba.com/logos/nba/1610612758/primary/L/logo.svg'> </div> <div class='team-title'>SAC</div> <div class='team-length'>2015
+2016</div></div><div class='team'> <div class='team-img-container'> <img class='team-img' src='https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg'> </div> <div class='team-title'>DAL</div> <div class='team-length'>2016
+2017</div></div><div class='team'> <div class='team-img-container'> <img class='team-img' src='https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg'> </div> <div class='team-title'>BKN</div> <div class='team-length'>2016
+2018</div></div><div class='team'> <div class='team-img-container'> <img class='team-img' src='https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg'> </div> <div class='team-title'>PHX</div> <div class='team-length'>2018
+2019</div></div></div>
+                    </div>
+                </div>
+
+                <div class="graph-container">
+                    <div style="color: #A1A1A1;" class="countingStatButtons"><div>&nbsp;|&nbsp;</div> <div onclick='totalStatButtonClicked(0)' id='totalCareerPts_button' class='countingStatButton' style='text-decoration: underline'>PTS</div><div>&nbsp;|&nbsp;</div> <div onclick='totalStatButtonClicked(1)' id='totalCareerRebs_button' class='countingStatButton' style='text-decoration: none'>REBS</div><div>&nbsp;|&nbsp;</div> <div onclick='totalStatButtonClicked(2)' id='totalCareerAsts_button' class='countingStatButton' style='text-decoration: none'>ASTS</div><div>&nbsp;|&nbsp;</div> <div onclick='totalStatButtonClicked(3)' id='totalCareerStls_button' class='countingStatButton' style='text-decoration: none'>STLS</div><div>&nbsp;|&nbsp;</div> <div onclick='totalStatButtonClicked(4)' id='totalCareerBlks_button' class='countingStatButton' style='text-decoration: none'>BLKS</div><div>&nbsp;|&nbsp;</div> <div onclick='totalStatButtonClicked(5)' id='totalCareerTovs_button' class='countingStatButton' style='text-decoration: none'>TOVS</div><div>&nbsp;|&nbsp;</div></div>
+                    <img style="display: flex;" id="totalCareerPts" src="{{ url_for('static', filename='images/careerPts_bargraph.png') }}"><img style="display: none;" id="totalCareerRebs" src="{{ url_for('static', filename='images/careerRebs_bargraph.png') }}"><img style="display: none;" id="totalCareerAsts" src="{{ url_for('static', filename='images/careerAsts_bargraph.png') }}"><img style="display: none;" id="totalCareerStls" src="{{ url_for('static', filename='images/careerStls_bargraph.png') }}"><img style="display: none;" id="totalCareerBlks" src="{{ url_for('static', filename='images/careerBlks_bargraph.png') }}"><img style="display: none;" id="totalCareerTovs" src="{{ url_for('static', filename='images/careerTovs_bargraph.png') }}">
+                </div>
+
+
+            </div>
+            <script src="static/js/statScript.js"></script>
+        </div>
+
+        <footer style="background-color: #A1A1A1;" class="footer" id="footer">
+            <p style="text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);">Copyright © Tygan Chin 2024</p>
+        </footer>
+    </body>
+    </html>
+    

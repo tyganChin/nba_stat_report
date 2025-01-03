@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayerStats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+</head>
+<body>
+    <img id="background-texture" src="../static/images/paper-background.png" alt="background texture">
+    <img id="loading" src="../static/images/loading.gif">
+    <div id="container">
+        <div id="title-container">
+            <div id="logo-container">
+                <img src="https://cdn.freebiesupply.com/images/large/2x/nba-logo-transparent.png" id="logo">
+            </div>
+            <p id="title">NBA Stat Report</p>
+        </div>
+        <form id="form" action="/submit" method="POST">
+            <input id="input" type="text" name="name" placeholder="NBA Player" autocomplete="off">
+            <div id="results-container"> </div>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+
+</html>
