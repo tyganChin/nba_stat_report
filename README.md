@@ -1,34 +1,32 @@
-# Minesweeper
+# NBA Stat Report
 #### Author : Tygan Chin
-#### Language : HTML, CSS, JavaScript
-#### Date : October, 2024
-Website that gives you a statistical report on all active and nonactive NBA players
+#### Languages : Python, HTML, CSS, JavaScript
+#### Date : December, 2024
 
 
 ## Description
 
-A full album rating website implementation including:
-  - A user-friendly interface to track and rank albums/individual tracks relative to each other
-  - Autonomous tracking of user-listened albums
-  - In depth information on all albums in the Spofity database including:
-      - Release Date
-      - Record Label
-      - Spotify Popularity
-      - Length of Album
-      - Similar Music
-  - Personalized album and artist search features
-  - A ratings system allowing users to rate albums on a scale
-  - The ability to view other AlbumRater users' profiles and rankings
-  - Visualizations of album rankings in a tier format
-  - Interactive features for discovering new music based on user preferences
-  - Customizable home screen with a profile picture and adjustable banner
+Website app that gives you a statistical report on all active and nonactive NBA players
+Report includes:
+  - General player information
+  - Career, playoff, and current (or most recent) averages
+  - Career season averages graphs that include that season's averages for all players and league leaders
+  - Player awards
+  - Player team history
+  - Player career totals 
+
 
 
 ## How to Access
 
-1. Visit http://tyganc.sgedu.site/ and create an account
-2. Begin listening and adding albums!
-3. Link your Spotify account for new albums you enjoy to be added automatically
+1. Download the the files in the app folder along with requirements .txt
+2. Create a virtual environment and install requirements within it.
+    python -m venv venv
+    source venv/bin/activate or venv\Scripts\activate on Windows
+    pip install -r requirements.txt
+3. Run python app.py
+4. Visit http://127.0.0.1:5000/ on your web-browser
+5. Type in any NBA into the search bar and click on the player
 
 ## User Interface
 
