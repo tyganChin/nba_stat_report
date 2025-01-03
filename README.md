@@ -30,27 +30,18 @@ Report includes:
 
 ## User Interface
 
-<img width="100%" alt="Screenshot 2024-10-18 at 1 38 21 PM" src="https://github.com/user-attachments/assets/c6708645-8e88-4c90-b454-249422bf5682">
+<img width="100%" alt="Screenshot 2025-01-03 at 3 38 57 PM" src="https://github.com/user-attachments/assets/7fd10e02-03c7-4f57-84e4-fac373a680fb" />
 
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 38 52 PM" src="https://github.com/user-attachments/assets/594ac166-2dfa-482d-9c56-77979ce111a9">
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 38 35 PM" src="https://github.com/user-attachments/assets/872a43ba-3c9f-47dc-a4ad-daecf00c8bfc"> 
+<img width="49.6%" alt="Screenshot 2025-01-03 at 3 39 24 PM" src="https://github.com/user-attachments/assets/30c78437-067f-4c29-9a54-a099f34f524b" />
+<img width="49.6%" alt="Screenshot 2025-01-03 at 3 39 35 PM" src="https://github.com/user-attachments/assets/e624443b-1317-4cff-8be5-284bc1256142" />
 
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 39 52 PM" src="https://github.com/user-attachments/assets/1ded9ef2-f09a-4126-8d03-0828c90eb9bb">
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 48 12 PM" src="https://github.com/user-attachments/assets/d8c56638-d2f2-43f9-9383-cd5ac9ab426c">
+<img width="100%" alt="Screenshot 2025-01-03 at 3 39 47 PM" src="https://github.com/user-attachments/assets/4bb0448f-4a18-40e0-bdb4-e1964e282485" />
 
-<img width="100%" alt="Screenshot 2024-10-18 at 1 40 34 PM" src="https://github.com/user-attachments/assets/3e42783c-27fe-483b-8b22-17b89bb5254c">
-<img width="100%" alt="Screenshot 2024-10-18 at 1 40 48 PM" src="https://github.com/user-attachments/assets/ae0efbaf-57fe-47f6-b3b3-c54d029c2e3b">
+<img width="49.6%" alt="Screenshot 2025-01-03 at 3 39 56 PM" src="https://github.com/user-attachments/assets/f65d4d66-bb40-4d2b-a25a-ac672d06383e" />
+<img width="49.6%" alt="Screenshot 2025-01-03 at 4 01 09 PM" src="https://github.com/user-attachments/assets/b301fa1f-e866-469b-ae6c-9585fc85df91" />
 
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 41 25 PM" src="https://github.com/user-attachments/assets/7d647886-a587-4c2f-801d-8521c79fd9c9">
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 48 40 PM" src="https://github.com/user-attachments/assets/e44c1506-b1f8-4fa6-bcf4-f18a97a4ff0b">
+<img width="49.6%" alt="Screenshot 2025-01-03 at 4 01 30 PM" src="https://github.com/user-attachments/assets/8c78a1af-d22a-4b80-b9f0-d5720747e305" />
+<img width="49.6%" alt="Screenshot 2025-01-03 at 3 41 57 PM" src="https://github.com/user-attachments/assets/68f3591d-d5fd-4563-8148-1656ed3dad5d" />
 
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 49 18 PM" src="https://github.com/user-attachments/assets/3a99f3d5-54ac-48c6-8405-77d53a7bbde4">
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 49 26 PM" src="https://github.com/user-attachments/assets/d4538982-80f1-42c3-9860-5db9c5b3862e">
+<img width="100%" alt="Screenshot 2025-01-03 at 3 42 16 PM" src="https://github.com/user-attachments/assets/a8b11dbe-bdbd-436a-a1f4-0755153bfdf9" />
 
-<img width="100%" alt="Screenshot 2024-10-18 at 1 49 36 PM" src="https://github.com/user-attachments/assets/11111932-f538-4d78-8adf-5a7812a7fc85">
-<img width="100%" alt="Screenshot 2024-10-18 at 1 49 44 PM" src="https://github.com/user-attachments/assets/95fedcc9-fe09-46d2-b0a1-5a7ce3b3e169">
-
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 50 01 PM" src="https://github.com/user-attachments/assets/5faa1dcf-9dcf-4a24-a6c0-97e5d917f670">
-<img width="49.6%" alt="Screenshot 2024-10-18 at 1 50 44 PM" src="https://github.com/user-attachments/assets/68afdce7-aba1-42e0-85de-5af082c92574">
-
-<img width="100%" alt="Screenshot 2024-10-18 at 7 46 41 PM" src="https://github.com/user-attachments/assets/88f7d93f-d192-4ae9-bffe-1e301c1cf683">
